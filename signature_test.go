@@ -29,12 +29,12 @@ func buildRequest(url string, method string, payload map[string]string) *http.Re
 //
 func dpTestNew() [][]string {
 	return [][]string{
-		[]string{"1234", "4321"},
-		[]string{"", ""},
-		[]string{" ", " "},
-		[]string{"test", ""},
-		[]string{"", "test"},
-		[]string{"test", "test"},
+		{"1234", "4321"},
+		{"", ""},
+		{" ", " "},
+		{"test", ""},
+		{"", "test"},
+		{"test", "test"},
 	}
 }
 
@@ -85,12 +85,12 @@ func TestAppend(t *testing.T) {
 //
 func dpTestSigningString() [][]string {
 	return [][]string{
-		[]string{"this is the body", "GET", "/test/me", time.Now().Format(time.RFC3339)},
-		[]string{"this is the body", "get", "/test/me", time.Now().Format(time.RFC3339)},
-		[]string{"", "get", "/test/me?test=me", time.Now().Format(time.RFC3339)},
-		[]string{"{\"test\":\"data\"}", "PoSt", "/test/me", time.Now().Format(time.RFC3339)},
-		[]string{"", "PUT", "/test/me", time.Now().Format(time.RFC3339)},
-		[]string{"{}", "PUT", "/test/me", time.Now().Format(time.RFC3339)},
+		{"this is the body", "GET", "/test/me", time.Now().Format(time.RFC3339)},
+		{"this is the body", "get", "/test/me", time.Now().Format(time.RFC3339)},
+		{"", "get", "/test/me?test=me", time.Now().Format(time.RFC3339)},
+		{"{\"test\":\"data\"}", "PoSt", "/test/me", time.Now().Format(time.RFC3339)},
+		{"", "PUT", "/test/me", time.Now().Format(time.RFC3339)},
+		{"{}", "PUT", "/test/me", time.Now().Format(time.RFC3339)},
 	}
 }
 
