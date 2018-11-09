@@ -59,7 +59,7 @@ func (s *Signature) Append() (*http.Request, error) {
 }
 
 //
-// SigningString returns a string for the signature, formatted as descibed in the MYRA API documentation
+// SigningString returns a string for the signature, formatted as described in the MYRA API documentation
 //
 func SigningString(body string, method string, path string, date string) string {
 	return fmt.Sprintf(
