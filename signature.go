@@ -20,8 +20,8 @@ const (
 )
 
 //
-// Signature holds information about the request, API key, API Secret
-// API key and API secret were provided by MYRA Security GmbH
+// Signature holds information about the request, API key, API secret.
+// API key and API secret were provided by Myra Security GmbH
 //
 type Signature struct {
 	secret  string
@@ -59,7 +59,7 @@ func (s *Signature) Append() (*http.Request, error) {
 }
 
 //
-// SigningString returns a string for the signature, formatted as described in the MYRA API documentation
+// SigningString returns a string for the signature, formatted as described in the Myra API documentation
 //
 func SigningString(body string, method string, path string, date string) string {
 	return fmt.Sprintf(
