@@ -1,6 +1,10 @@
 ## Signature
 Golang package for generating/adding the required authentication information to a MYRA API call.
 
+[![go report card](https://goreportcard.com/badge/github.com/Myra-Security-GmbH/signature "go report card")](https://goreportcard.com/report/github.com/Myra-Security-GmbH/signature)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![GoDoc](https://godoc.org/github.com/Myra-Security-GmbH/signature?status.svg)](https://godoc.org/github.com/Myra-Security-GmbH/signature)
+
 ### Usage
 ```
 // Create a new Signature instance using your API credentials provided by MYRA Security GmbH and the prepared request
