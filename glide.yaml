@@ -1,0 +1,6 @@
+package: github.com/Myra-Security-GmbH/signature
+import: []
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
