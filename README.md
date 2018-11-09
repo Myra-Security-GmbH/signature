@@ -7,7 +7,7 @@ Golang package for generating/adding the required authentication information to 
 
 ### Usage
 ```
-// Create a new Signature instance using your API credentials provided by MYRA Security GmbH and the prepared request
+// Create a new Signature instance using your API credentials provided by Myra Security GmbH and the prepared request
 s := signature.New(secret, apiKey, request)
 
 // Append signature to the request and return prepared request
