@@ -20,6 +20,6 @@ signature, err := s.Signature(t)
 ...
 
 // OR - just generate and return the SigningString (required for the signature):
-signingString := SigningString("content data", "GET", "/en/rapi/...", t)
+signingString := signature.SigningString("content data", "GET", "/en/rapi/...", t)
 ...
 ```
